@@ -1,0 +1,39 @@
+body{
+    margin: 0px;
+}
+
+.content{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+}
+
+.content .header{
+    display: flex;
+    width: 100%;
+    height: 90px;
+    background-color: black;
+}
+
+.content .header ul{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0px 0px;
+    align-items: center;
+}
+
+.content .header ul #logo{
+    display: flex;
+    height: 99px;
+}
+
+.content .header ul #config{
+    display: flex;
+    height: 50px;
+}
+
+.content .header ul #menu{
+    
+}
