@@ -48,7 +48,7 @@ body{
     height: 100vh;
     width: 100%;  
     flex-wrap: wrap;
-    box-shadow:     0px 5px 5px orangered;
+    box-shadow:     0px 5px 5px black;
 
 }
 
@@ -126,7 +126,7 @@ body{
 
 .infos {
     display: flex;
-    height: 50vh;
+    height: 30vh;
     justify-content: center;
     margin-top: 20px;
 }
@@ -154,15 +154,14 @@ body{
 .infos .img .move .line,
 .infos .img .move2 .line2{
     display: flex;
-    background-color: orangered;
+    background-color: black;
     height: 100%;
-    width: 40%;
+    width: 43%;
     border-radius: 10px 0px;
-    opacity: .75;
 }
 
 .infos .img .move .line{
-    margin-left: 15%;
+    margin-left: 8%;
 }
 
 .infos .img .move2{
@@ -170,8 +169,14 @@ body{
 }
 
 .infos .img .move2 .line2{
-    margin-right: 10%;
+    margin-right: 5%;
 
 }
 
+.movies{
+    display: flex;
+    margin: 0px;
+    width: 100%;
+    height: 100vh;
+}
 
