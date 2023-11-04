@@ -253,5 +253,7 @@ body{
     bottom: 200px;
 }
 
-.movies 
-
+.movies .line5 img{
+    display: flex;
+    width: 50%;
+} 
