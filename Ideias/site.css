@@ -177,7 +177,7 @@ body{
     display: flex;
     margin: 0px;
     width: 100%;
-    height: 300vh;
+    height: 600vh;
     flex-direction: column;
     box-shadow: 0px -3px 10px black;
 }
@@ -243,17 +243,38 @@ body{
     bottom: 75px;
 }
 
+.movies .line4{
+    height: 80vh;
+    position: relative;
+    bottom: 100px;
+}
+
 .movies .line4 img#nine{
     position: relative;
-    bottom: 250px;
+    bottom: 100px;
 }
 
 .movies .line4 img#ten{
     position: relative;
-    bottom: 200px;
+    bottom: 75px;
 }
 
-.movies .line5 img{
+.movies .box{
     display: flex;
-    width: 50%;
-} 
+    background-color: black;
+    width: 100%;
+    height: 105vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.movies .box img{
+    display: flex;
+    width: 80%;
+    height: 80%;
+    border-radius: 10px;
+    border: 5px outset rgb(59, 146, 165);
+}
+
+
+
