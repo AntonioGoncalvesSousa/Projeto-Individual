@@ -2,6 +2,15 @@ body{
     margin: 0px;
 }
 
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
 .content{
     display: flex;
     width: 100%;
@@ -15,20 +24,29 @@ body{
     height: 90px;
     background: linear-gradient(to top, rgba(255, 1, 1, 0) 0%,#242424 50%,#000000 100%);
     backdrop-filter: blur(1px);
+    justify-content: space-between;
+    align-items: center;
 }
 
 .content .container .header ul{
     display: flex;
-    justify-content: space-between;
-    width: 100%;
-    margin: 0px 0px;
+    width: 90px;
+    height: 100%;
     align-items: center;
+    margin-left: 20px;
     margin-right: 10px;
+    justify-content: center;
 }
 
 .content .container .header ul #logo{
     display: flex;
     height: 60px;
+}
+
+.content .container .header ul #logo:hover{
+    height: 70px;
+    transition: .5s;
+    cursor: pointer;
 }
 
 .content .container .header ul #config{
@@ -38,14 +56,26 @@ body{
     bottom: 12px;
 }
 
+.content .container .header ul #config:hover{
+    height: 60px;
+    transition: .5s;
+    cursor: pointer;
+}
+
 .content .container .header ul #menu{
     display: flex;
     height: 75px;
 }
 
+.content .container .header ul #menu:hover{
+    height: 85px;
+    transition: .5s;
+    cursor: pointer;
+}
+
 .content .container{
     display: flex;
-    background-image: url(Referenccias/back_ideas/Race.jpg);
+    background-image: url(Referencias/back_ideas/Race.jpg);
     background-size: cover;
     height: 100vh;
     width: 100%;  
@@ -84,14 +114,10 @@ body{
     text-decoration: none;
     flex-direction: column;
     margin: 10px;
+    height: 85px;
     color: white;
     align-items: center;
-}
-
-.content .container .fixer .data .box .text li h1,
-.content .container .fixer .data .box .text li h2{
-    display: flex;
-    height: 10px;
+    justify-content: space-between;
 }
 
 .content .container .fixer .row .skip{
@@ -137,6 +163,11 @@ body{
 .content .container .fixer .row .skip img{
     display: flex;
     height: 35px;
+}
+
+.content .container .fixer .row .skip a{
+    transition: 1s;
+    scroll-behavior: smooth;
 }
 
 .infos {
@@ -242,26 +273,157 @@ body{
 .movies .box img{
     display: flex;
     width: 5%;
-    height: 6%;
+    height: 7%;
+}
+
+.movies .box img:hover{
+    transition: .5s;
+    cursor: pointer;
+    height: 8%;
+    width: 6%;
 }
 
 .block{
     display: flex;
-    height: 40vh;
+    height: 50vh;
     width: 100%;
-    background-color: rgb(119, 119, 255);
+    background-color: rgb(59, 146, 165);
     justify-content: center;
     align-items: center;
 }
 
-.block .myself img{
+.block .myself{
     display: flex;
-    width: 100px;
-    height: 140px;
-    border-radius: 50%;
+    height: 80%;
+    width: 80%;
+    justify-content: space-between;
+    margin-left: 50px;
 }
 
+.block .myself ul{
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    height: 300px;
+    border: 3px solid white;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+}
 
+.block .myself ul h2,
+.block .myself ul h3{
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+.block .myself img{
+    display: flex;
+    height: 100%;
+    width: 25%;
+}
+
+.block .myself #me{
+    border-radius: 5px;
+    border: 3px solid white;
+}
+
+.credenciais{
+    display: flex;
+    height: 70vh;
+    background-color: black;
+    flex-direction: column;
+    align-items: center;
+}
+
+.credenciais .text h1{
+    color: white;
+    margin-top: 20px;
+}
+
+.credenciais .container{
+    display: flex;
+    width: 100%;
+    height: 80%;
+    justify-content: space-evenly;
+    position: relative;
+    top: 35px;
+}
+
+.credenciais .container .box{
+    width: 30%;
+    height: 70%;
+    border: 3px solid white;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.credenciais .container .box ul{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.credenciais .container .box ul h2,
+.credenciais .container .box ul p{
+    color: white;
+    width: fit-content;
+}
+
+.credenciais .container .box ul p button{
+    width: 200px;
+    height: 40px;
+    background-color: 
+    white;
+    border-radius: 5px;
+}
+
+.credenciais .row{
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    justify-content: center;
+    color: white;
+    position: relative;
+    bottom: 30px;
+}
+
+.footer{
+    background-color: #242424;
+    width: 100%;
+    height: 20vh;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.footer .line{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer .line ul{
+    display: flex;
+    height: 60px;
+    align-items: center;
+    text-decoration: underline;
+    margin-top: 15px;
+    width: 350px;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+.footer .line ul img{
+    height: 45px;
+}
+
+.footer .line ul #up:hover{
+    transition: .5s;
+    height: 55px;
+}
 
 
 
