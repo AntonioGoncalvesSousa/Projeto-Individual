@@ -99,7 +99,7 @@ html{
 
 .content .container{
     display: flex;
-    background-image: url(Referencias/back_ideas/Race.jpg);
+    background-image: url(Referencias/back_ideas/torettoCostas.jpg);
     background-size: cover;
     height: 100vh;
     width: 100%;  
@@ -165,30 +165,33 @@ html{
 }
 
 .content .container .fixer .row .skip .ball .box1{
-    display: none;
-    background-color: black;
-    height: 50%;
-    width: 50%;
-    border-radius: 50%;
-    padding: 3px;
-}
-
-.content .container .fixer .row .skip .ball .box2{
     display: flex;
     background-color: black;
     height: 50%;
     width: 50%;
     border-radius: 50%;
     padding: 3px;
+    cursor: pointer;
 }
 
-.content .container .fixer .row .skip .ball .box3{
+.content .container .fixer .row .skip .ball .box2{
     display: none;
     background-color: black;
     height: 50%;
     width: 50%;
     border-radius: 50%;
     padding: 3px;
+    cursor: pointer;
+}
+
+.content .container .fixer .row .skip .ball .box3{
+    display: flex;
+    background-color: black;
+    height: 50%;
+    width: 50%;
+    border-radius: 50%;
+    padding: 3px;
+    cursor: pointer;
 }
 
 .content .container .fixer .row .skip img{
