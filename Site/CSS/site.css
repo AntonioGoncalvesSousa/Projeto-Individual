@@ -14,6 +14,17 @@ html{
     margin: 0px;
 }
 
+.content .container{
+    display: flex;
+    background-image: url(Referencias/back_ideas/Sem\ título.png);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;  
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow:     0px 5px 5px black;
+}
+
 .content .container .header{
     display: flex;
     width: 100%;
@@ -26,12 +37,19 @@ html{
 
 .content .container .header ul{
     display: flex;
-    width: 90px;
+    width: 150px;
     height: 100%;
     align-items: center;
     margin-left: 20px;
     margin-right: 10px;
     justify-content: center;
+    color: white;
+    justify-content: space-between;
+}
+
+.content .container .header ul a{
+    text-decoration: none;
+    color: white;
 }
 
 .content .container .header ul #logo{
@@ -50,6 +68,25 @@ html{
     height: 50px;
     position: relative;
     bottom: 12px;
+}
+
+
+.content .container .header ul #config:hover{
+    height: 60px;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.content .container .header ul #menu{
+    display: flex;
+    height: 75px;
+}
+
+
+.content .container .header ul #menu:hover{
+    height: 85px;
+    transition: .5s;
+    cursor: pointer;
 }
 
 .content .container .configuracoes{
@@ -78,35 +115,6 @@ html{
     display: flex;
     text-decoration: none;
     color: white;
-}
-
-.content .container .header ul #config:hover{
-    height: 60px;
-    transition: .5s;
-    cursor: pointer;
-}
-
-.content .container .header ul #menu{
-    display: flex;
-    height: 75px;
-}
-
-.content .container .header ul #menu:hover{
-    height: 85px;
-    transition: .5s;
-    cursor: pointer;
-}
-
-.content .container{
-    display: flex;
-    background-image: url(Referencias/back_ideas/torettoCostas.jpg);
-    background-size: cover;
-    height: 100vh;
-    width: 100%;  
-    flex-direction: column;
-    justify-content: space-between;
-    box-shadow:     0px 5px 5px black;
-
 }
 
 .content .container .fixer{
@@ -140,7 +148,7 @@ html{
     margin: 10px;
     height: 85px;
     width: 500px;
-    color: white;
+    color: black;
     align-items: center;
     justify-content: space-between;
 }
@@ -294,6 +302,28 @@ html{
     justify-content: center;
     align-items: center;
     justify-content: space-evenly;
+    text-align: center
+}
+
+.movies .box #sobreFilme{
+    display: none;
+    color: white;
+    width: 80%;
+    height: 80%;
+    background-color: black;
+    border-radius: 10px;
+    border: 5px outset rgb(59, 146, 165);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.movies .box #sobreFilme ul{
+    margin: 0px 150px;  
+    display: flex;
+    height: 40%;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .movies .box img#robs{
@@ -410,7 +440,7 @@ html{
     border-color: rgb(59, 146, 165);
     width: 220px;
     height: 70px;
-    transition: 1s;
+    transition: .5s;
 }
 
 .credenciais .row{

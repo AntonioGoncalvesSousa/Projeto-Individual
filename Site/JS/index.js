@@ -1,14 +1,26 @@
 // CODIGO PARA FAZER APARECER A CONFIG DO CARONA 
 
 function MostrarConfig(){
-    var bloco = document.getElementById('barC')
+    var blocoConfig = document.getElementById('barC')
 
-    if(bloco.style.display === 'none'){
-        bloco.style.display = 'block';
+    if(blocoConfig.style.display === 'none'){
+        blocoConfig.style.display = 'block';
     }else{
-        bloco.style.display = 'none';
+        blocoConfig.style.display = 'none';
     }
 }
+
+function MostrarMenu(){
+    var blocoMenu = document.getElementById('barM')
+
+    if(blocoMenu.style.display === 'none'){
+        blocoMenu.style.display = 'block';
+    }else{
+        blocoMenu.style.display = 'none';
+    }
+}
+
+// CODIGO PARA TROCAR OS TEXTOS
 
 function base1(){
     var conteudoBox = document.getElementById('textinho');
@@ -70,5 +82,22 @@ function base3(){
         conteudoBox.classList.remove("fade-out");
         
     }, 1000);
+}
+
+
+
+// EFEITO FILME
+
+function Change(){
+    var caixaTexto = document.getElementById('sobreFilme')
+    var fotinha = document.getElementById('robs')
+
+    if(fotinha.style.display === 'none'){
+        fotinha.style.display = 'flex'
+        caixaTexto.style.display = 'none'
+    } else{    
+        fotinha.style.display = 'none'
+        caixaTexto.style.display = 'flex'
+    }
 }
 

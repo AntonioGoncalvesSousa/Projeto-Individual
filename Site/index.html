@@ -11,7 +11,7 @@
 <body>
     <!-- HEADER -->
     <div class="content">
-        <div id="papelDeParede" class="container">
+        <div class="container">
             <div class="header">
                 <ul>
                     <a>
@@ -24,8 +24,11 @@
                     </a>
                 </ul>
                 <ul>
-                    <a href="">
-                        <img id="menu" src="CSS/Referencias/Menu Soft.png">
+                    <a href="login.html">
+                        <h3>Log in</h3>
+                    </a>
+                    <a href="cadastro.html">
+                        <h3>Cadastro</h3>
                     </a>
                 </ul>
             </div>
@@ -36,6 +39,15 @@
                         <a href="#Robs&Shaw">Spin Off</a>
                         <a href="#SobreMim">Sobre mim</a>
                         <a href="#informacoes">Cadastro</a>
+                    </ul>
+                </div>
+            </div>
+            <div id="barM" class="configuracoes" style="display: none;">
+                <div class="settingsConfig">
+                    <ul>
+                        <a href="#filmes">Log in</a>
+                        <a href="#Robs&Shaw">Cadastro</a>
+                        <a href="#SobreMim">Todos os filmes</a>
                     </ul>
                 </div>
             </div>
@@ -93,7 +105,9 @@
         <!-- FILMES -->
         <div class="movies" id="filmes">
             <div class="line1">
-                <img id="one" src="CSS/Referencias/Filmes/1.jpg">
+                <a href="">
+                    <img id="one" src="CSS/Referencias/Filmes/1.jpg">
+                </a>
                 <img src="CSS/Referencias/Filmes/2.png">
                 <img id="three" src="CSS/Referencias/Filmes/3.jpg">
                 <img id="four" src="CSS/Referencias/Filmes/4.png">
@@ -108,9 +122,20 @@
             </div>
         </div>
         <div id="Robs&Shaw" class="box">
-            <img src="CSS/Referencias/DuplasetaEsq.png">
+            <img onclick="Change()" src="CSS/Referencias/DuplasetaEsq.png">
             <img id="robs" src="CSS/Referencias/Filmes/R(2).jpg">
-            <img src="CSS/Referencias/DuplasetaDir.png">
+            <div id="sobreFilme">
+                <ul>
+                    <h1>Velozes & Furiosos:Robs & Shaw</h1>
+                    <h3>
+                        "Velozes & Furiosos: Hobbs & Shaw" é um spin-off vibrante, destacando a dupla Hobbs (Dwayne
+                        Johnson) e Shaw (Jason Statham) em uma trama repleta de ação e comédia. O filme oferece
+                        sequências empolgantes e uma história independente, mantendo a essência da franquia principal
+                        com adrenalina e entretenimento cativante.
+                    </h3>
+                </ul>
+            </div>
+            <img onclick="Change()" src="CSS/Referencias/DuplasetaDir.png">
         </div>
     </div>
     <div id="SobreMim" class="block">
@@ -133,14 +158,18 @@
         </div>
         <div class="container">
             <div class="box">
+                <a href="cadastro.html">
                     <button>
                         <h3>Cadastre-se</h3>
                     </button>
+                </a>
             </div>
             <div class="box">
+                <a href="login.html">
                     <button>
                         <h3>Log in</h3>
                     </button>
+                </a>
             </div>
         </div>
         <div class="row">
@@ -156,9 +185,6 @@
             <ul>
                 <a href="">
                     <img id="up" src="CSS/Referencias/RedesSociais/instagramcor.png">
-                </a>
-                <a href="">
-                    <img id="up" src="CSS/Referencias/RedesSociais/whatsappcor.png">
                 </a>
                 <a href="">
                     <img id="up" src="CSS/Referencias/RedesSociais/twittercor.png">
