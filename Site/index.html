@@ -1,12 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="port">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="CSS/site.css">
+    <title>Fast & Furious</title>
+    <link rel="stylesheet" href="CSS/index.css">
 </head>
+
+
+    <!-- FAZER LOGIN E CADASTRO PULAR  -->
+
 
 <body>
     <!-- HEADER -->
@@ -37,7 +41,7 @@
                     <ul>
                         <a href="#filmes">Filmes</a>
                         <a href="#Robs&Shaw">Spin Off</a>
-                        <a href="#SobreMim">Sobre mim</a>
+                        <a href="#SobreMim">Quem sou eu</a>
                         <a href="#informacoes">Cadastro</a>
                     </ul>
                 </div>
@@ -104,21 +108,58 @@
         </div>
         <!-- FILMES -->
         <div class="movies" id="filmes">
-            <div class="line1">
-                <a href="">
-                    <img id="one" src="CSS/Referencias/Filmes/1.jpg">
+            <div class="line">
+                <a href="#line" onclick="Filme1()">
+                    <img src="CSS/Referencias/Filmes/1.jpg">
                 </a>
-                <img src="CSS/Referencias/Filmes/2.png">
-                <img id="three" src="CSS/Referencias/Filmes/3.jpg">
-                <img id="four" src="CSS/Referencias/Filmes/4.png">
-                <img id="five" src="CSS/Referencias/Filmes/5.jpg">
+                <a href="#line" onclick="Filme2()">
+                    <img src="CSS/Referencias/Filmes/2.png">
+                </a>
+                <a href="#line" onclick="Filme3()">
+                    <img src="CSS/Referencias/Filmes/3.jpg">
+                </a>
+                <a href="#line" onclick="Filme4()">
+                    <img src="CSS/Referencias/Filmes/4.png">
+                </a>
+                <a href="#line" onclick="Filme5()">
+                    <img src="CSS/Referencias/Filmes/5.jpg">
+                </a>
             </div>
-            <div class="line2">
-                <img id="six" src="CSS/Referencias/Filmes/6.jpg">
-                <img id="seven" src="CSS/Referencias/Filmes/7.jpg">
-                <img id="eight" src="CSS/Referencias/Filmes/8.jpg">
-                <img id="nine" src="CSS/Referencias/Filmes/9.jpg">
-                <img id="ten" src="CSS/Referencias/Filmes/10(2).jpg">
+            <div id="line" class="line">
+                <a href="#line" onclick="Filme6()">
+                    <img src="CSS/Referencias/Filmes/6.jpg">
+                </a>
+                <a href="#line" onclick="Filme7()">
+                    <img src="CSS/Referencias/Filmes/7.jpg">
+                </a>
+                <a href="#line" onclick="Filme8()">
+                    <img src="CSS/Referencias/Filmes/8.jpg">
+                </a>
+                <a href="#line" onclick="Filme9()">
+                    <img src="CSS/Referencias/Filmes/9.jpg">
+                </a>
+                <a href="#line" onclick="Filme10()">
+                    <img src="CSS/Referencias/Filmes/10(2).jpg">
+                </a>
+            </div>
+        </div>
+        <div class="resumo">
+            <div class="borda">
+                <div id="texto" class="texto">
+                    <h1>Velozes & Furiosos 1</h1>
+                    <h3>Em Velozes e Furiosos (The Fast and The Furious, 2001), o policial Brian O' Connor (Paul Walker)
+                        é infiltrado no mundo das corridas de carros ilegais para juntar provas e capturar Dominic
+                        Toretto (Vin Diesel), líder da gangue e procurado pelo FBI.
+                        <br>
+                        Durante a missão, Brian ganha a confiança e a amizade de Dom, além de se envolver com sua irmã,
+                        Mia (Jordana Brewster), o que o deixa confuso entre seguir com o seu objetivo ou honrar os laços
+                        de amizade e família que aprendeu durante o tempo em que passou infiltrado.
+                        <br>
+                        O filme que lançou os astros Vin Diesel e Paul Walker foi um sucesso na época, com uma
+                        bilheteria mundial de US$ 207 milhões para um custo de US$ 38 milhões. Carros turbinados,
+                        mulheres lindas e cenas de corrida em Los Angeles ganhavam o gosto do público.
+                    </h3>
+                </div>
             </div>
         </div>
         <div id="Robs&Shaw" class="box">
@@ -128,13 +169,20 @@
                 <ul>
                     <h1>Velozes & Furiosos:Robs & Shaw</h1>
                     <h3>
-                        "Velozes & Furiosos: Hobbs & Shaw" é um spin-off vibrante, destacando a dupla Hobbs (Dwayne
-                        Johnson) e Shaw (Jason Statham) em uma trama repleta de ação e comédia. O filme oferece
-                        sequências empolgantes e uma história independente, mantendo a essência da franquia principal
-                        com adrenalina e entretenimento cativante.
+                        O sucesso da química entre Dwayne Johnson e Jason Statham foi tanto que a franquia anunciou o
+                        seu primeiro filme derivado, Velozes & Furiosos: Hobbs & Shaw (2019), focado nos personagens dos
+                        atores.
+                        <br>
+                        No longa, os dois precisam se unir para impedir a ameaça de um ciberterrorista genéticamente
+                        modificado, Brixton Lore, interpretado por Idris Elba. O filme ainda contou com nomes de
+                        destaque no elenco, como Vanessa Kirby, Eiza González, Cliff Curtis, e Helen Mirren.
+
+
                     </h3>
                 </ul>
             </div>
+            <div class="rua"></div>
+            <div class="rua2"></div>
             <img onclick="Change()" src="CSS/Referencias/DuplasetaDir.png">
         </div>
     </div>
@@ -143,12 +191,13 @@
             <img id="me" src="CSS/Referencias/Perfil.jpeg">
             <img src="CSS/Referencias/volante.png">
             <ul>
-                <h2>Sobre mim</h2>
-                <h3>Olá, meu nome é Antonio Gonçalves Sousa tenho 18 anos e gosto bastante de filmes, séries, carros,
-                    futebol, matematica e animais. Sou uma pessoa bastante proativa e tranquila, sempre buscando
-                    aprender e compartilhar conhecimento com colegas, tambem me considero uma pessoa curiosa e que esta
-                    sempre interessado em aprender e se diversificar cada vez mais, e isso é o que me impulsiona a novas
-                    descobertas. </h3>
+                <h2>Quem sou eu??</h2>
+                <h3> Olá, meu nome é Antônio Gonçalves Sousa, tenho 18 anos e gosto bastante de filmes, séries, carros,
+                    futebol, matemática e animais. Sou uma pessoa bastante proativa e tranquila, sempre buscando
+                    aprender e compartilhar conhecimento com colegas. Também me considero uma pessoa curiosa e que está
+                    sempre interessada em aprender e se diversificar cada vez mais, e isso é o que me impulsiona a novas
+                    descobertas.
+                </h3>
             </ul>
         </div>
     </div>
@@ -183,13 +232,13 @@
                 <h2>Velozes & Furiosos</h2>
             </ul>
             <ul>
-                <a href="">
+                <a href="https://www.instagram.com/tonhao_222/">
                     <img id="up" src="CSS/Referencias/RedesSociais/instagramcor.png">
                 </a>
-                <a href="">
+                <a href="https://x.com/tonhao_222?s=21&t=-e1uavhVGmsyv8Z20bY-JA">
                     <img id="up" src="CSS/Referencias/RedesSociais/twittercor.png">
                 </a>
-                <a href="">
+                <a href="https://www.tiktok.com/@tonhao_222?_t=8hGAe8f5P53&_r=1">
                     <img id="up" src="CSS/Referencias/RedesSociais/tik-tokcor.png">
                 </a>
             </ul>

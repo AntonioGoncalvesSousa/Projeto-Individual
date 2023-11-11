@@ -101,3 +101,83 @@ function Change(){
     }
 }
 
+// TROCAR RESUMO DO FILME
+
+function Filme1(){
+    texto.innerHTML=`<h1>Velozes & Furiosos </h1>
+                    <h3>Em Velozes e Furiosos (The Fast and The Furious, 2001), o policial Brian O' Connor (Paul Walker) é infiltrado no mundo das corridas de carros ilegais para juntar provas e capturar Dominic Toretto (Vin Diesel), líder da gangue e procurado pelo FBI.
+<br>
+                        Durante a missão, Brian ganha a confiança e a amizade de Dom, além de se envolver com sua irmã, Mia (Jordana Brewster), o que o deixa confuso entre seguir com o seu objetivo ou honrar os laços de amizade e família que aprendeu durante o tempo em que passou infiltrado.
+<br>                    
+                        O filme que lançou os astros Vin Diesel e Paul Walker foi um sucesso na época, com uma bilheteria mundial de US$ 207 milhões para um custo de US$ 38 milhões. Carros turbinados, mulheres lindas e cenas de corrida em Los Angeles ganhavam o gosto do público.</h3>`; 
+}
+function Filme2(){
+    texto.innerHTML=`<h1>+ Velozes + Furiosos </h1>
+                    <h3>+ Velozes + Furiosos (2 Fast 2 Furious, 2003), segundo filme da franquia, tem a saída de Vin Diesel e entrada dos personagens Roman Pierce (Tyrese Gibson) e Tej (Ludacris), que auxiliam Brian O'Connor em mais um trabalho infiltrado para pegar um chefão do crime organizado de Miami. Eva Mendes faz a vez de par romântico de Walker. 
+<br>
+                    O longa continua com a premissa de apresentar máquinas para chamar a atenção do público apaixonados por carros, e convenceu tanto quanto o primeiro filme, rendendo pouco mais de US$ 236 milhões nos cinemas. Diesel escolheu não retornar para a sequência para estrelar outro filme de ação, Triplo X.</h3>`
+}
+function Filme3(){
+    texto.innerHTML=`<h1>Velozes & Furiosos: DESAFIO EM TÓQUIO</h1>
+                    <h3>Velozes e Furiosos - Desafio em Tóquio (The Fast and The Furious: Tokyo Drift, 2006) foi o terceiro filme da série e o que mais trouxe mudanças. Com elenco inteiro modificado, quem ficou com o papel de protagonista foi Sean Boswell (Lucas Black), jovem rebelde que é enviado pela mãe para morar em Tóquio com seu pai e tomar um rumo na vida.
+<br>
+                    Na terra do sol nascente, Sean conhece Han (Sung Kang), líder de um grupo de corredores de rua que o acolhe e o ensina tudo sobre as corridas de Tóquio, além de ajudá-lo a superar o seu rival, D.K. (Brian Tee).
+<br>             
+                    Desafio em Tóquio foi o longa que menos rendeu para a Universal (US$ 158 milhões) e o único até o sétimo filme a não ter Paul Walker no elenco, pois o estúdio o considerava velho para o papel. No roteiro original, o personagem de Vin Diesel seria um dos protagonistas, mas o ator acabou com apenas uma participação especial ao final, que faz a ligação do filme com o universo da franquia.`
+}
+function Filme4(){
+    texto.innerHTML=`<h1>Velozes & Furiosos 4</h1>
+                    <h3>Velozes e Furiosos 4 (Fast and Furious, 2009) pode ser considerado o renascimento da série. Novamente com Justin Lin, o estúdio garantiu o retorno do elenco original (Walker, Diesel, Brewster e Michelle Rodriguez) e foi o primeiro a dar mais ênfase ao roteiro, esquecendo um pouco o foco nos carros turbinados.
+<br>
+                    A mudança surtiu efeito e o longa fez a maior bilheteria da franquia até a época, com US$ 363 milhões arrecadados. Na trama, que se passa 5 anos após o original, Brian é um agente do FBI que se une a Toretto para capturar um líder do tráfico de drogas. O sucesso fez com que a Universal garantisse mais uma continuação.`
+}
+function Filme5(){
+    texto.innerHTML=`<h1>VELOZES & FURIOSOS 5 : Operação Rio</h1>
+                    <h3>Velozes e Furiosos 5: Operação Rio (Fast Five, 2011) aproveitou o sucesso do filme anterior e foi mais ousado. Após o final de Velozes 4, a trama sai das ruas de Los Angeles e vai para o Brasil, no Rio de Janeiro, onde o grupo liderado por Toretto busca refugiu para fugir das autoridades.
+<br>
+                    O quinto capítulo da série apresenta o policial Hobbs (Dwayne Johnson), personagem que passa a fazer parte do elenco titular, e traz de volta destaques dos outros filmes, como Roman Pierce, Tej, Han e Gisele (Gal Gadot), apresentada em Velozes 4. Aqui, Lin chama atenção pelas cenas mais "insanas" da franquia, com direito a saltos de um trem em movimento e um cofre gigante sendo arrastado pelas ruas.
+<br>
+                    Uma das cenas mais aguardadas pelos fãs é o confronto entre Diesel e The Rock, dois dos grandes nomes recentes dos filmes de ação. E o duelo não deixa a desejar, com dezenas de socos, paredes quebradas e muita, mas muita, força bruta.`
+}
+function Filme6(){
+    texto.innerHTML=`<h1>Velozes & Furiosos 6</h1>
+                    <h3>Velozes e Furiosos 6 (Fast & Furious 6, 2013), novamente dirigido por Justin Lin, traz de volta o elenco estelar dos filmes anteriores e ganha o apoio de Luke Evans como o vilão Owen Shaw. Michelle Rodriguez, que teve sua personagem "morta" no quarto longa, retorna para dar ainda mais ação ao que pode ser considerado um dos melhores da série. Inclusive, a atriz revelou em entrevista que não sabia do seu retorno até assistir a cena pós-créditos do quinto longa.
+<br>
+                    Aqui a ação vai do começo ao fim, com lutas no metrô de Londres, carros perseguindo aviões e tanques de guerra esmagando tudo o que passa na frente pelas estradas da Europa.
+<br>                    
+                    O sexto filme da franquia também faz a ligação com Desafio em Tóquio, utilizando o destino da história de Han e a participação de Diesel. Com US$ 788 milhões de bilheteria, o sucesso abriu espaço para que a produção de Velozes e Furiosos 7 fosse autorizada.`
+}
+function Filme7(){
+    texto.innerHTML=`<h1>Velozes & Furiosos 7</h1>
+                    <h3>Velozes & Furiosos 7 (Furious 7, 2015), dirigido por James Wan, foi totalmente adaptado por conta do falecimento de Paul Walker em novembro de 2013, antes do término das gravações. Para finalizar suas cenas, a produção utilizou efeitos especiais e a atuação de seus dois irmãos para representarem Brian O'Connor na tela. 
+<br>
+                    Os produtores, ao invés de matar o personagem de Walker, criaram uma história para que Brian O’Connor terminasse aposentado. O final do longa foi elogiado por especialistas e emocionou fãs ao redor do mundo - leia a crítica.
+<br>                    
+                    No sétimo filme, a família de Dom luta contra Deckard Shaw (Jason Statham), irmão do vilão do sexto filme que busca vingança, e salva a hacker Ramsey (Nathalie Emmanuel), que se torna parte do grupo.
+<br>                    
+                    A produção foi um sucesso imediato e tornou-se a maior bilheteria da franquia até o hoje, arrecadando mais de US$ 1,5 bilhão ao redor do mundo. `
+}
+function Filme8(){
+    texto.innerHTML=`<h1>Velozes & Furiosos 8</h1>
+                    <h3>Velozes & Furiosos 8 (The Fate of the Furious, 2017) marcou o primeiro capítulo da franquia desde Desafio em Tóquio a não trazer nem Paul Walker nem Jordana Brewster no elenco. 
+<br>
+                    Na trama, Dominic Toretto é chantageado e precisa trabalhar para ciberterrorista Cipher (Charlize Theron), que mantém sua ex-namorada Elena (Elsa Pataky) e seu recém-descoberto filho como reféns. Assim, o resto da família, auxiliados agora por Deckard Shaw (Statham) e sua mãe (Helen Mirren), precisa lutar contra seu próprio líder. 
+<br>                    
+                    O longa foi o segundo da franquia a ultrapassar o marco de US$ 1 bilhão na bilheteria, arrecadando US$ 1,2 bilhão e se tornando o 2º maior sucesso comercial da série de filmes. `
+}
+function Filme9(){
+    texto.innerHTML=`<h1>Velozes & Furiosos 9</h1>
+                    <h3>Em "Velozes & Furiosos 9", teremos o retorno de muitos personagens do Tokyo Drift, como Han, Twinkie e Sean, além da primeira aparição de Jakob Toretto (John Cena), antagonista e irmão de Dominic.
+<br>
+                    O retorno de Han, que escapou da morte planejada por Deckard com a ajuda do Sr. Ninguém (Kurt Russell), animou os fãs da franquia. Na trama, a paz da família formada por Toretto, Letty e Brian é interrompida por Jakob.
+<br>                    
+                    A equipe se une para impedir uma trama maligna que ameaça o mundo, liderada por Cipher e pelo irmão abandonado de Dom, um dos mais habilidosos motoristas do mundo. Ao longo da história, o relacionamento entre os irmãos evolui de forma positiva, e é bastante possível que Jakob se junte à equipe nos próximos filmes.`
+}
+function Filme10(){
+    texto.innerHTML=`<h1>Velozes & Furiosos 10</h1>
+                    <h3>Dom Toretto e sua família foram mais espertos e superaram todos os inimigos em seu caminho. Agora, eles devem desafiar o adversário mais letal que já enfrentaram. 
+<br>                    
+                    Alimentada pela vingança, uma ameaça terrível emerge das sombras do passado na forma de Dante, para destruir o mundo de Toretto e destruir tudo - e todos - que ele ama. 
+<br>
+                    Ele então, comandando novamente a equipe de corredores mais conhecida do mundo, encara mais uma difícil missão sobre quatro rodas. O fim da estrada começa e Velozes & Furiosos 10 lança os capítulos finais de uma das franquias globais mais famosas e populares do cinema, agora em sua terceira década e ainda forte com o mesmo elenco e personagens centrais de quando começou.`
+}
