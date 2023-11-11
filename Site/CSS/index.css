@@ -157,6 +157,7 @@ html{
     color: black;
     align-items: center;
     justify-content: space-between;
+    text-align: center;
 }
 
 .content .container .fixer .row .skip{
@@ -335,6 +336,7 @@ html{
     display: flex;
     height: fit-content;
     width: fit-content;
+    text-align: center;
 }
 
 .movies .box{
@@ -371,7 +373,7 @@ html{
     position: absolute;
     width: 20px;
     height: 84%;
-    left: 900px;
+    left: 730px;
     background-color: orange;
     z-index: 0;
 }
@@ -381,7 +383,7 @@ html{
     width: 20px;
     height: 84%;
     background-color: orange;
-    left: 930px;
+    left: 700px;
     z-index: 0;
 }
 

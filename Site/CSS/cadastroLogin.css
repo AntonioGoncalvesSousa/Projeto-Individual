@@ -33,6 +33,14 @@
     bottom: 40px;
 }
 
+.content .credenciais .erro{
+    display: flex;
+    color: red;
+    width: fit-content;
+    height: 30px;
+    text-align: center;
+}
+
 .content .credenciais ul{
     display: flex;
     height: 350px;
@@ -47,11 +55,6 @@
     height: fit-content;
     width: fit-content;
     flex-direction: column;
-}
-
-.content .credenciais ul label{
-    display: flex;
-    justify-content: center;
 }
 
 .content .credenciais ul b input{
