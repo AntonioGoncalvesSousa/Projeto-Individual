@@ -91,6 +91,11 @@ html{
     cursor: pointer;
 }
 
+.content .container .header ul h3:hover{
+    font-size: 23px;
+    transition: .5s;
+}
+
 .content .container .configuracoes{
     height: 100px;
     width: 90px;
