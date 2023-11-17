@@ -62,7 +62,16 @@
     border-radius: 3px;
 }
 
-.content .credenciais button{
+.content .credenciais .botao{
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 20px;
+}
+
+.content .credenciais .botao button{
     display: flex;
     position: relative;
     top: 40px;
@@ -76,7 +85,7 @@
     border-radius: 10px;
 }
 
-.content .credenciais button:hover{
+.content .credenciais .botao button:hover{
     height: 50px;
     width: 160px;
     background-color: black;

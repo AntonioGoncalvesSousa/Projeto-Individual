@@ -3,6 +3,7 @@
     padding: 0px;
 }
 
+
 html{
     scroll-behavior: smooth;
     overflow-x: hidden;
@@ -52,6 +53,8 @@ html{
 .content .container .header ul a{
     text-decoration: none;
     color: white;
+    font-size: 20px;
+    font-family: 'Brygada 1918', serif;
 }
 
 .content .container .header ul #logo{
@@ -92,7 +95,7 @@ html{
 }
 
 .content .container .header ul h3:hover{
-    font-size: 23px;
+    font-size: 25px;
     transition: .5s;
 }
 
@@ -102,12 +105,15 @@ html{
     margin-left: 30px;
     background-color: rgb(23,23,26,0.6);
     backdrop-filter: blur(15px);
+    border: 3px solid white;
+    border-radius: 3px;
 }
 
 .content .container .configuracoes .settingsConfig {
     display: flex;
     justify-content: center;
     height: 100%;
+    width: 100%;
 }
 
 .content .container .configuracoes .settingsConfig ul{
@@ -118,10 +124,22 @@ html{
     align-items: center;
 }
 
+.content .container .configuracoes .settingsConfig ul .linha{
+    height: 2px;
+    width: 100%;
+    display: flex;
+    background-color: white;
+}
+
 .content .container .configuracoes .settingsConfig ul a{
     display: flex;
     text-decoration: none;
     color: white;
+}
+
+.content .container .configuracoes .settingsConfig ul a:hover{
+    font-size: 17px;
+    transition: .5s;
 }
 
 .content .container .fixer{
@@ -158,6 +176,7 @@ html{
     align-items: center;
     justify-content: space-between;
     text-align: center;
+    font-family: 'Brygada 1918', serif;
 }
 
 .content .container .fixer .row .skip{
@@ -265,7 +284,7 @@ html{
 
 .infos .img .move2 .line2{
     margin-right: 5%;
-
+    
 }
 
 .movies{
@@ -274,6 +293,7 @@ html{
     width: 100%;
     height: fit-content;
     flex-direction: column;
+    background-color: black;
     box-shadow: 0px -3px 10px black;
 }
 
@@ -284,7 +304,6 @@ html{
 
 .movies .wall img {
     width: 100%;
-    
 }
 
 .movies .line{
@@ -297,6 +316,10 @@ html{
     display: flex;
     width: 25%;
     height: 400px;
+}
+.movies .line a:hover{
+    width: 440px;
+    transition: .7s;
 }
 
 .movies .line a img{
@@ -326,7 +349,7 @@ html{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 50%;
+    height: fit-content;
     width: 65%;
     color: white;
 }
@@ -394,6 +417,7 @@ html{
     flex-direction: column;
     justify-content: space-around;
     z-index: 2;
+    font-family: 'Roboto', sans-serif;
 }
 
 .movies .box img#robs{
@@ -451,6 +475,10 @@ html{
 .block .myself ul h3{
     margin-right: 30px;
     margin-left: 30px;
+    font-family: 'Brygada 1918', serif;
+}
+.block .myself ul h2{
+    font-family: none;
 }
 
 .block .myself img{
