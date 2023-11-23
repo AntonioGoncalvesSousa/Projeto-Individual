@@ -1,0 +1,64 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.container{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+}
+
+.container .header{
+    display: flex;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(68, 68, 68);
+    box-shadow: 0px 3px 6px black;
+    z-index: 1;
+}
+
+.container .box{
+    display: flex;
+    background-color: rgb(28, 28, 28);
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container .box .imagem{
+    display: flex;
+    width: 80%;
+    height: 85%;
+    background-image: url(Referencias/Quiz2.jpg);
+    background-size: cover;
+    justify-content: end;
+    align-items: end;
+}
+
+.container .box .imagem button{
+    display: flex;
+    width: 150px;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 10px;
+    right: 20px;
+    background-color: rgb(68, 68, 68);
+    color: white;
+    border: 3px solid rgb(68, 68, 68);
+    border-radius: 3px;
+}
+
+.container .box .imagem button:hover{
+    background-color: black;
+    border-color: white;
+    transition: .4s;
+}
