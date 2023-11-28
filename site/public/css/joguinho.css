@@ -113,95 +113,45 @@ body {
     border-radius: 3px;
 }
 
+.container .box .imagem a #leader {
+    position: relative;
+    right: 10px;
+}
+
 .container .box .imagem button:hover {
     background-color: black;
     border-color: white;
     transition: .4s;
 }
 
-.first {
-    width: 100%;
-    height: 102vh;
-    background-color: rgb(50, 50, 50);
-}
-
-.first .second {
+.content {
     display: flex;
+    height: 90vh;
     width: 100%;
-    height: 100%;
-    background-image: url(Referencias/back_ideas/Quiz.jpg);
-    background-size: cover;
-    opacity: .5;
-    filter: blur(10px);
-    justify-content: center;
-    align-items: center;
-}
-
-.mid {
-    display: flex;
-    width: 100%;
-    height: 0px;
-    justify-content: center;
-}
-
-.mid .question {
-    display: flex;
-    width: 1000px;
-    height: 500px;
-    background-color: black;
+    background-color: rgb(28, 28, 28);
     color: white;
-    border-radius: 5px;
-    opacity: .85;
-    position: relative;
-    bottom: 620px;
     flex-direction: column;
-    text-align: center;
-    justify-content: space-between;
     align-items: center;
-    backdrop-filter: blur(5px);
 }
 
-.mid .question h1 {
+.content .line {
     display: flex;
     width: 100%;
-    height: 80px;
-    align-items: end;
     justify-content: center;
 }
 
-.mid .question h3 {
+.content .line h1 {
     display: flex;
-    width: 80%;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-
+    font-family: 'Brygada 1918', serif;
 }
 
-.mid .question ul {
+.content .rank {
     display: flex;
     width: 60%;
-    height: fit-content;
-    justify-content: space-between;
-}
-
-.mid .question ul button {
-    display: flex;
-    width: 150px;
-    height: 60px;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    bottom: 10px;
-    right: 20px;
-    background-color: rgb(68, 68, 68);
-    color: white;
-    border: 3px solid rgb(68, 68, 68);
-    border-radius: 3px;
-}
-
-.mid .question ul button:hover {
+    height: 900px;
     background-color: black;
-    border-color: white;
-    transition: .4s;
+    margin-top: 70px;
+    border: 3px solid white;
+    border-bottom: 0px;
+    border-radius: 10px;
 }
