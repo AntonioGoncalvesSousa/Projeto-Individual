@@ -8,5 +8,9 @@ email varchar(45) unique,
 senha varchar(45)
 );
 
-select * from usuario;
+create table pontuacao(
+idAvaliacao int primary key auto_increment,
+tempo float
+);
 
+select * from usuario;

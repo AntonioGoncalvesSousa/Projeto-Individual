@@ -1,21 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="icon" href="css/Referencias/Fast_X_logo.png">
     <link rel="stylesheet" href="CSS/joguinho.css">
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Brygada+1918:ital,wght@1,700&family=Edu+TAS+Beginner&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Brygada+1918:ital,wght@1,700&family=Edu+TAS+Beginner&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-    <div class="container">
+    <div id="container" class="container">
         <div class="header">
             <ul>
                 <section>
                     <a href="index.html"><img id="foto" src="css/Referencias/LogoBranca.png"></a>
                 </section>
                 <section>
-                    <label for="Quiz">Quiz</label>
+                    <label for="Memory">Quiz</label>
                 </section>
                 <section>
                     <img id="foto2" src="css/Referencias/grafico-de-barras.png">
@@ -24,11 +29,43 @@
         </div>
         <div class="box">
             <div id="imagem" class="imagem">
-                <button id="Quiz" onclick="Informacoes()">Ir para o Quiz</button>
+                <a href="#question" style="text-decoration: none;">
+                    <button>Ir para o Jogo da memória</button>
+                </a>
             </div>
         </div>
     </div>
+    <div class="first">
+        <div class="second">
+        </div>
+    </div>
+    <div id="mid" class="mid">
+        <div id="question" class="question">
+            <h1>Desafio Velozes & Furiosos Quiz!</h1>
+            <h3>
+                E aí, aventureiro da velocidade! Se você acha que conhece cada curva da franquia "Velozes & Furiosos",
+                chegou a hora de testar seus conhecimentos no nosso Quiz especial!
+                <br><br>
+                Prepare-se para mergulhar no universo cheio de adrenalina, carros turbinados e muita ação. Desafie seus
+                amigos, mostre que é o verdadeiro mestre das pistas e divirta-se enquanto revisita os momentos mais
+                emocionantes da saga!
+                <br><br>
+                Vai encarar? Clique aqui e mostre que você é um verdadeiro fã da velocidade
+            </h3>
+            <ul>
+                <a href="#container" style="text-decoration: none;">
+                    <button>
+                        Retornar
+                    </button>
+                </a>
+                <button onclick="Start()">
+                    Começar quiz
+                </button>
+            </ul>
+        </div>
+    </div>
 </body>
+
 </html>
 <script src="js/joguinho.js">
 </script>

@@ -1,9 +1,8 @@
-function informacoes() {
-    var blocoImg = document.getElementById('imagem')
+function Start() {
+    var botaoJogo = document.getElementById('comecar');
+    question.innerHTML=``;
+    botaoJogo.addEventListener('click', ()=>{
+        jogo.classList.add('active')})
 
-    if(blocoConfig.style.display === 'none'){
-        blocoConfig.style.display = 'block';
-    }else{
-        blocoConfig.style.display = 'none';
-    }
+        
 }
