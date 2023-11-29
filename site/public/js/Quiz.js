@@ -97,13 +97,43 @@ function finishGame() {
       Você acertou ${totalCorrect} de ${totalQuestions} questões!
       <span>Resultado: ${message}</span>
     </p>
-    <a href="./joguinho.html">
-      <button class="button">
+      <button onclick="pontosBanco()" class="button">
         Voltar para o Menu
       </button>
-    </a>
   `
 }
+
+function pontosBanco() {
+  var qtdPontosVar = totalCorrect * 10;
+  var idUsuarioVar = sessionStorage.ID_USUARIO;
+
+  fetch("/usuarios/pontosBanco", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      // crie um atributo que recebe o valor recuperado aqui
+      // Agora vá para o arquivo routes/usuario.js
+      pontosServer: qtdPontosVar,
+      idUsuarioServer: idUsuarioVar
+    }),
+  })
+    .then(function (resposta) {
+      console.log("resposta: ", resposta);
+
+      if (resposta.ok) {
+        window.location = "joguinho.html";
+      } else {
+        erro.innerHTML = `<h4>Não foi possivel realizar o cadastro nesse momento, Tente denovo mais tarde</h4>`;
+      }
+    })
+    .catch(function (resposta) {
+      console.log(`#ERRO: ${resposta}`);
+    });
+
+  return false;
+} 
 
 
 const questions = [

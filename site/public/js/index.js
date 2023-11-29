@@ -173,3 +173,94 @@ function Filme10(){
 <br>
                     Ele então, comandando novamente a equipe de corredores mais conhecida do mundo, encara mais uma difícil missão sobre quatro rodas. O fim da estrada começa e Velozes & Furiosos 10 lança os capítulos finais de uma das franquias globais mais famosas e populares do cinema, agora em sua terceira década e ainda forte com o mesmo elenco e personagens centrais de quando começou.`
 }
+
+
+// GRAFICOS
+
+    Chart.defaults.color = '#fff'
+    Chart.defaults.borderColor = '#fff'
+
+    const labels = ['Velozes e Furiosos', '+ Velozes + Furiosos', 'Velozes e Furiosos 3', 'Velozes e Furiosos 4', 'Velozes e Furiosos 5', 'Velozes e Furiosos 6', 'Velozes e Furiosos 7', 'Velozes e Furiosos 8', 'Velozes e Furiosos 9', 'Velozes e Furiosos : Hobbs & Shaw', 'Velozes e Furiosos 10'];const data = {
+        labels: labels,
+        datasets: [{
+            label: 'Filmes Favoritos',
+            data: [65, 59, 80, 81, 56, 55, 40],
+            backgroundColor: [
+                'rgba(255, 99, 132)',
+                'rgba(255, 159, 64)',
+                'rgba(255, 205, 86)',
+                'rgba(75, 192, 192)',
+                'rgba(54, 162, 235)',
+                'rgba(153, 102, 255)',
+                'rgba(201, 203, 207)'
+            ],
+            borderColor: [
+                'rgb(255, 99, 132)',
+                'rgb(255, 159, 64)',
+                'rgb(255, 205, 86)',
+                'rgb(75, 192, 192)',
+                'rgb(54, 162, 235)',
+                'rgb(153, 102, 255)',
+                'rgb(201, 203, 207)'
+            ],
+            borderWidth: 1
+        }]
+    };
+
+const config = {
+    type: 'bar',
+    data: data,
+    options: {
+        scales: {
+            y: {
+                beginAtZero: true
+            }
+        }
+    },
+};
+
+const myChart = new Chart(
+    document.getElementById('myChart'),
+    config
+);
+
+
+
+
+var listaContagemFilmes = [];
+
+// setTimeout(() => {
+//     graficoFilme()
+// }, 1000);
+function graficoFilme() {
+     
+  
+    fetch("/usuarios/graficoFilme").then(res =>{
+      if (!res.ok) {
+        console.log("ERRO")
+      }
+      return res.json();
+    })
+      .then(res => {
+        listaContagemFilmes = res;
+        console.log(listaContagemFilmes)
+        
+
+
+
+
+
+
+
+
+
+
+
+
+      })
+      .catch(function (resposta) {
+        console.log(`#ERRO: ${resposta}`);
+      });
+  
+    return false;
+  } 

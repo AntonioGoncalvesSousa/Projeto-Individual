@@ -12,4 +12,19 @@ router.post("/autenticar", function (req, res) {
     usuarioController.autenticar(req, res);
 });
 
+router.post("/pontosBanco", function (req, res) {
+    usuarioController.pontosBanco(req, res);
+})
+
+router.get("/refresh", function (req, res) {
+    console.log('cheguei no route')
+    usuarioController.refresh(req, res);
+})
+
+router.get("/graficoFilme", function (req, res) {
+    console.log('cheguei no route')
+    usuarioController.graficoFilme(req, res);
+})
+
+
 module.exports = router;

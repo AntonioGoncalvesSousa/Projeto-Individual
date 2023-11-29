@@ -9,9 +9,12 @@
     <link rel="stylesheet" href="CSS/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Brygada+1918:ital,wght@1,700&family=Edu+TAS+Beginner&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Brygada+1918:ital,wght@1,700&family=Edu+TAS+Beginner&display=swap"
+        rel="stylesheet">
 </head>
-<body>
+
+<body onload="graficoFilme()">
     <!-- HEADER -->
     <div class="content">
         <div class="container">
@@ -175,6 +178,19 @@
             <img onclick="Change()" src="CSS/Referencias/DuplasetaDir.png">
         </div>
     </div>
+    <div class="space">
+        <div class="text">
+            <h1>Favoritos da Comunidade &hearts;</h1>
+        </div>
+        <div class="status">
+            <canvas id="myChart">
+
+            </canvas>
+        </div>
+        <div class="text">
+            <h1>Cadastre-se e participe já!!!</h1>
+        </div>
+    </div>
     <div id="SobreMim" class="block">
         <div class="myself">
             <img id="me" src="CSS/Referencias/Perfil.jpeg">
@@ -245,4 +261,5 @@
 </body>
 
 </html>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script type="text/javascript" src="JS/index.js"></script>
