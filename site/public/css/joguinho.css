@@ -157,7 +157,8 @@ body {
     border: 3px solid white;
     border-bottom: 0px;
     border-radius: 10px;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .content .rank .boxMensagem {
@@ -167,8 +168,20 @@ body {
     flex-direction: column;
 }
 
+.content .rank .top {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    height: fit-content;
+    }
+
 .content .rank .boxMensagem .mensagem {
     display: flex;
-    width: 80%;
+    width: 100%;
     justify-content: space-between;
+}
+
+.content .rank .boxMensagem .mensagem h3 {
+    display: flex;
+    width: 100px;
 }
