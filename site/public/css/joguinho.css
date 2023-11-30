@@ -47,8 +47,7 @@ body {
 .container .header ul section label {
     display: flex;
     text-decoration: none;
-    /* font-family: 'Brygada 1918', serif; */
-    font-family: 'DM Sans';
+    font-family: 'Brygada 1918', serif;
     font-weight: bolder;
     font-style: italic;
     color: white;

@@ -12,7 +12,7 @@ function autenticar(email, senha) {
 // Coloque os mesmos parâmetros aqui. Vá para a var instrucao
 function cadastrar(nome, email, senha, filme) {
     console.log("ACESSEI O USUARIO MODEL \n \n\t\t >> Se aqui der erro de 'Error: connect ECONNREFUSED',\n \t\t >> verifique suas credenciais de acesso ao banco\n \t\t >> e se o servidor de seu BD está rodando corretamente. \n\n function cadastrar():", nome, email, senha);
-    
+
     // Insira exatamente a query do banco aqui, lembrando da nomenclatura exata nos valores
     //  e na ordem de inserção dos dados.
     var instrucao = `
@@ -24,7 +24,7 @@ function cadastrar(nome, email, senha, filme) {
 
 function pontosBanco(qtdPontos, idUsuario) {
     // console.log("ACESSEI O USUARIO MODEL \n \n\t\t >> Se aqui der erro de 'Error: connect ECONNREFUSED',\n \t\t >> verifique suas credenciais de acesso ao banco\n \t\t >> e se o servidor de seu BD está rodando corretamente. \n\n function cadastrar():", nome, email, senha);
-    
+
     // Insira exatamente a query do banco aqui, lembrando da nomenclatura exata nos valores
     //  e na ordem de inserção dos dados.
     var instrucao = `
@@ -36,14 +36,17 @@ function pontosBanco(qtdPontos, idUsuario) {
 
 function refresh() {
     var instrucao = `
-    select usuario.nome, sum(quiz.qtdTentativas) as Tentativas, sum(quiz.pontos) as Pts from usuario join quiz on fkUsuario = idUsuario group by usuario.nome order by Pts desc;    `;
+    select usuario.nome, sum(quiz.qtdTentativas) as Tentativas, sum(quiz.pontos) as Pts from usuario 
+        join quiz on fkUsuario = idUsuario group by usuario.nome order by Pts desc;    
+        `;
     console.log("Executando a instrução SQL: \n" + instrucao);
     return database.executar(instrucao);
 }
 
 function graficoFilme() {
     var instrucao = `
-    select count(filmeFav.filme) as qtd, filme from filmeFav join usuario on fkFilme = idFilme group by filmeFav.filme;
+    select filmeFav.filme, count(usuario.fkFilme) as qtd_votos from filmeFav 
+        left join usuario on filmeFav.idFilme = usuario.fkFilme group by filmeFav.filme;
     `;
     console.log("Executando a instrução SQL: \n" + instrucao);
     return database.executar(instrucao);
