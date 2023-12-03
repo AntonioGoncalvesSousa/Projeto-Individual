@@ -40,6 +40,8 @@ select * from filmeFav;
 
 select * from usuario;
 
+select * from quiz;
+
 select usuario.nome, sum(quiz.qtdTentativas), sum(quiz.pontos) as Pts from usuario join quiz on fkUsuario = idUsuario group by usuario.nome order by Pts desc;
 
 select * from usuario join filmeFav on fkFilme = idFilme;
